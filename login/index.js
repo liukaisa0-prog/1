@@ -13,7 +13,7 @@
 'use strict';
 
 const https = require('https');
-const { collection } = require('../common/db');
+const { collection } = require('../common/db'); // DB 可选：云数据库开通后启用
 const { parseRequest, resolveUser, issueToken } = require('../common/ctx');
 
 const JSCODE2SESSION_URL = 'https://developer.toutiao.com/api/apps/v2/jscode2session';
@@ -65,7 +65,8 @@ module.exports = async (params, context) => {
   }
   const unionid = payload.unionid || '';
 
-  // users 集合 upsert（按 openid）
+  // v2：DB 持久化为可选（MongoDB 组件个人主体不可用、云数据库审核中）。
+  // 云数据库开通后在这里补 users upsert / sessions 落库即可，当前静默跳过。
   try {
     const users = await collection('users');
     await users.updateOne(
@@ -74,19 +75,11 @@ module.exports = async (params, context) => {
       { upsert: true }
     );
   } catch (e) {
-    console.warn('[login] users upsert 失败（不阻塞登录）:', e.message);
+    console.warn('[login] users 落库跳过（DB 未启用）:', e.message);
   }
 
-  // 签发 token 并落 sessions 集合
-  const token = issueToken();
-  try {
-    const sessions = await collection('sessions');
-    await sessions.insertOne({ token, openid: identity, expires_at: Date.now() + TOKEN_TTL, created_at: Date.now() });
-  } catch (e) {
-    console.error('[login] 会话写入失败:', e.message);
-    return fail('INTERNAL', '登录态写入失败，请重试');
-  }
-
+  // 签发 HMAC 自包含 token（验签无需查库，7 天有效）
+  const token = issueToken(identity);
   return ok({ token, openid: identity });
 };
 

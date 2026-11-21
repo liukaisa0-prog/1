@@ -59,12 +59,14 @@ module.exports = async (params, context) => {
       case 'getHistory': {
         // 仅返回当前用户自己的记录；识别不到身份时返回空列表（首次进入即空态）
         if (!openid) return ok({ items: [] });
-        const col = await collection('test_records');
-        const rows = await col.find({ user_id: openid })
-          .sort({ created_at: -1 })
-          .limit(20)
-          .toArray();
-        const items = rows.map(r => {
+        // v2：DB 未启用时优雅降级为空列表（云数据库开通后自动恢复持久化历史）
+        try {
+          const col = await collection('test_records');
+          const rows = await col.find({ user_id: openid })
+            .sort({ created_at: -1 })
+            .limit(20)
+            .toArray();
+          const items = rows.map(r => {
           const char = ALL_CHARACTERS.find(c => c.character_id === r.matched_character_id);
           if (!char || !r.dimension_scores) return null;
           return {
@@ -86,6 +88,10 @@ module.exports = async (params, context) => {
           };
         }).filter(Boolean);
         return ok({ items });
+        } catch (dbErr) {
+          console.warn('[match] getHistory 查询失败（DB 未启用）:', dbErr.message);
+          return ok({ items: [], dbUnavailable: true });
+        }
       }
 
       default:
