@@ -1,0 +1,8 @@
+{
+  "name": "soul-match-douyin-cloud",
+  "version": "1.0.0",
+  "description": "心探抖音版云端点（部署到抖音云：login/match/stats/qrcode/init）",
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  }
+}

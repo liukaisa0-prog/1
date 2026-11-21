@@ -1,0 +1,302 @@
+[
+  {
+    "question_id": "O1",
+    "question_text": "看到一种没吃过的菜，我会想找机会尝一尝。",
+    "dimension": "O",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察对新体验的开放度（IPIP『对尝试新事物感兴趣』维度的原创中文改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "O2",
+    "question_text": "我对很多不同领域的话题都有兴趣，不局限于自己熟悉的那个圈子。",
+    "dimension": "O",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察兴趣广度（IPIP『好奇心/兴趣广泛』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "O3",
+    "question_text": "比起熟悉的老办法，我更愿意试试新的方式。",
+    "dimension": "O",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察对创新方法的偏好（IPIP『喜欢非常规方式』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "O4",
+    "question_text": "面对抽象的想法和概念，我觉得费脑筋，宁可绕开。",
+    "dimension": "O",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察对抽象思考的兴趣（IPIP『回避抽象思维』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "O5",
+    "question_text": "我常常会为一个突然冒出来的点子感到兴奋。",
+    "dimension": "O",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察想象力和灵感活跃度（IPIP『想象力丰富』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "O6",
+    "question_text": "我觉得艺术、音乐或文学作品打动不了我多少。",
+    "dimension": "O",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察审美敏感性（IPIP『审美反思』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "C1",
+    "question_text": "接了手的事情，我一定会办完，不会半路放下。",
+    "dimension": "C",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察任务坚持性（IPIP『把任务做完』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "C2",
+    "question_text": "我做事情喜欢提前安排，不太喜欢临场手忙脚乱。",
+    "dimension": "C",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察条理性/计划性（IPIP『做事有序』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "C3",
+    "question_text": "我经常一拖再拖，把事情留到最后才做。",
+    "dimension": "C",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察拖延倾向（IPIP『拖延』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "C4",
+    "question_text": "别人常说我做事靠谱，交给我的事不用再操心。",
+    "dimension": "C",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察尽责可靠的外部评价（IPIP『可靠』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "C5",
+    "question_text": "交出去的东西，我总会再多检查一遍才放心。",
+    "dimension": "C",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察严谨细致（IPIP『追求完美/细致』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "C6",
+    "question_text": "我做事比较随性，想到哪做到哪，不太爱列计划。",
+    "dimension": "C",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察计划性（IPIP『无计划』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "E1",
+    "question_text": "在人多的场合，我通常是主动开口的那个。",
+    "dimension": "E",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察社交主动性（IPIP『健谈/主动』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "E2",
+    "question_text": "热闹的活动让我充满能量，独处太久反而难受。",
+    "dimension": "E",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察社交能量来源（IPIP『喜欢热闹』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "E3",
+    "question_text": "参加了聚会之后，我常常需要独处很久才能缓过来。",
+    "dimension": "E",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察社交消耗感（IPIP『回避聚会』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "E4",
+    "question_text": "和陌生人打交道，对我来说不是什么难事。",
+    "dimension": "E",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察社交自信（IPIP『轻松开始交谈』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "E5",
+    "question_text": "比起一大群人热闹，我更愿意和一两个熟人待着。",
+    "dimension": "E",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察社交规模偏好（IPIP『偏好小圈子』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "E6",
+    "question_text": "我情绪来了的时候，很容易感染到身边的人。",
+    "dimension": "E",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察情绪表现力与感染力（IPIP『充满活力/感染』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "A1",
+    "question_text": "别人遇到困难来找我，我一般不会袖手旁观。",
+    "dimension": "A",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察利他倾向（IPIP『乐于助人』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "A2",
+    "question_text": "我做决定的时候，会认真考虑身边人的感受。",
+    "dimension": "A",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察共情与顾及他人（IPIP『体贴他人感受』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "A3",
+    "question_text": "说实话，我比较关心自己的利益，别人靠后。",
+    "dimension": "A",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察利己倾向（IPIP『以自我为中心』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "A4",
+    "question_text": "和人意见不一致时，我更倾向于找个折中的办法。",
+    "dimension": "A",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察合作与妥协倾向（IPIP『避免冲突/合作』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "A5",
+    "question_text": "我说话比较直，不太顾及会不会让人下不来台。",
+    "dimension": "A",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察人际尖锐度（IPIP『批评他人』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "A6",
+    "question_text": "大多数人看到的我，是一个好相处的人。",
+    "dimension": "A",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察人际友善的总体印象（IPIP『让人感到轻松』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "S1",
+    "question_text": "出了岔子的时候，我通常能让自己冷静下来想办法。",
+    "dimension": "S",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察压力下的冷静（IPIP『压力下保持冷静』原创改写，直接测稳定性正向端）",
+    "enabled": true
+  },
+  {
+    "question_id": "S2",
+    "question_text": "一点小事就能让我烦一整天。",
+    "dimension": "S",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察情绪易扰性（IPIP『易被小事困扰』原创改写，即神经质正向题反向处理）",
+    "enabled": true
+  },
+  {
+    "question_id": "S3",
+    "question_text": "我常常担心可能出错的事情，哪怕它还没发生。",
+    "dimension": "S",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察焦虑倾向（IPIP『担忧』原创改写，神经质正向题反向处理）",
+    "enabled": true
+  },
+  {
+    "question_id": "S4",
+    "question_text": "我的情绪比较平稳，不容易大起大落。",
+    "dimension": "S",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "直接考察情绪平稳度（IPIP『情绪平稳』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "S5",
+    "question_text": "情绪上来的时候，我很难控制住自己。",
+    "dimension": "S",
+    "reverse_scoring": true,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "反向计分：得分 = 6 - 用户原始选项分",
+    "design_note": "反向考察情绪失控倾向（IPIP『易怒/冲动』原创改写）",
+    "enabled": true
+  },
+  {
+    "question_id": "S6",
+    "question_text": "压力大的时候，我也能照常把事情做好。",
+    "dimension": "S",
+    "reverse_scoring": false,
+    "option_labels": ["非常不符合我", "比较不符合我", "不确定", "比较符合我", "非常符合我"],
+    "scoring_rule": "正向计分：选项1-5分别计1-5分",
+    "design_note": "考察压力下的功能保持（IPIP『高压下正常发挥』原创改写）",
+    "enabled": true
+  }
+]
