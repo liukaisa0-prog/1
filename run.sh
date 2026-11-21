@@ -1,2 +1,2 @@
 #!/bin/sh
-node /app/server.js
+node /opt/application/server.js
